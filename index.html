@@ -1,76 +1,132 @@
+---
+title: "BabyKeep: a private baby tracker for iPhone"
+description: "BabyKeep is a free iPhone baby tracker made for 3 AM: feeds, sleep, diapers, pumping and growth. No account, no ads, no data collected."
+image: /icon.png
+lang: en
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BabyKeep — Private baby tracker</title>
-<style>
-  :root { --bg:#0e1020; --card:#171a2e; --ink:#edeefb; --muted:#a9adcf; --accent:#7378e0; --accent2:#5a60c8; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-         background:var(--bg); color:var(--ink); line-height:1.6; }
-  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  header { text-align:center; padding:40px 0 16px; }
-  .logo { width:88px; height:88px; border-radius:22px; display:inline-flex; align-items:center; justify-content:center;
-          background:linear-gradient(135deg,var(--accent2),var(--accent)); font-size:48px; }
-  h1 { margin:16px 0 4px; font-size:32px; }
-  .tag { color:var(--muted); margin:0 0 8px; }
-  h2 { margin-top:40px; font-size:22px; border-bottom:1px solid #262a44; padding-bottom:8px; }
-  a { color:var(--accent); }
-  .card { background:var(--card); border:1px solid #232743; border-radius:16px; padding:20px 22px; margin-top:18px; }
-  .muted { color:var(--muted); font-size:14px; }
-  ul { padding-left:20px; }
-  code { background:#11132a; padding:2px 6px; border-radius:6px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:48px; }
-</style>
+<title>BabyKeep: a private baby tracker for iPhone</title>
+<meta name="apple-itunes-app" content="app-id=6788453754">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+{% seo title=false %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "BabyKeep",
+  "alternateName": "BabyKeep: Baby Tracker & Log",
+  "description": "A private baby tracker for iPhone: feeds, sleep, diapers, pumping and growth on the WHO tables, with one-handed logging built for 3 AM. No account, no ads, no data collected.",
+  "url": "https://nickminieri.github.io/babykeep/",
+  "installUrl": "https://apps.apple.com/app/id6788453754",
+  "image": "https://nickminieri.github.io/babykeep/icon.png",
+  "operatingSystem": "iOS 17.0 or later",
+  "applicationCategory": "HealthApplication",
+  "inLanguage": [
+    "en"
+  ],
+  "fileSize": "8.7 MB",
+  "contentRating": "4+",
+  "datePublished": "2026-07-14",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to download and use. Optional BabyKeep Plus: $9.99 once."
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Nick Minieri"
+  },
+  "sameAs": "https://apps.apple.com/app/id6788453754"
+}
+</script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo">🍼</div>
-    <h1>BabyKeep</h1>
-    <p class="tag">Your baby's day, beautifully kept. Private by design.</p>
-  </header>
-
-  <p>BabyKeep helps you track feeds, sleep, diapers, pumping, growth and milestones — with live timers right on your Lock Screen and WHO growth percentiles on-device. Everything stays on your iPhone: no account, no ads, no subscription.</p>
-
-  <h2 id="about">About BabyKeep</h2>
-  <div class="card">
-<p><strong>What it is:</strong> A newborn care log: feeds, sleep, diapers, pumping, and growth, with one-handed logging built for 3 a.m. and a living quilt of your baby's days.</p>
-<p><strong>Who it is for:</strong> New parents in the first year.</p>
-<p><strong>Price:</strong> Free. One optional one-time Plus purchase. No subscription, no ads.</p>
-<p><strong>Privacy:</strong> No account, no analytics, no data collected. Everything stays on your iPhone. Works offline.</p>
-<p><strong>Platform and languages:</strong> iPhone (iOS 17 or later). English.</p>
-<p><strong>Made by:</strong> Nick Minieri, one person in the United States. <a href="https://apps.apple.com/app/id6788453754">App Store listing</a>.</p>
+<div class="sky">
+  <div class="hero">
+    <div>
+      <a class="brand" href="./"><img src="icon.png" alt="BabyKeep app icon" width="44" height="44">BabyKeep</a>
+      <h1>Made for 3 AM</h1>
+      <p class="sub">The one number you need, lit by a nightlight. Log with one thumb.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6788453754"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
+      <p class="small">Free. No account. No ads.</p>
+    </div>
+    <img class="phone" src="img/today.webp" alt="BabyKeep's Today screen at night: last fed 1 hour 18 minutes ago, with one-thumb log buttons" width="720" height="1472">
   </div>
+</div>
+
+<main>
+  <p class="lede" id="about">BabyKeep is a baby tracker for iPhone, made for 3 AM. It shows the one number you need, and you can log with one thumb.</p>
+  <p>It keeps feeds, sleep, diapers, pumping and growth, with live timers on your Lock Screen. Every day you log stitches a patch into a quilt. Everything stays on your iPhone. There is no account, no cloud and no subscription.</p>
+</main>
+
+<div class="three">
+  <figure>
+    <img src="img/first.webp" alt="The first two weeks: what is typical each day beside what you logged" width="720" height="1472" loading="lazy">
+    <h3 class="big">The first two weeks</h3>
+    <p>What's typical each day, beside what you logged. Ranges, never alarms.</p>
+  </figure>
+  <figure>
+    <img src="img/night.webp" alt="Your night: your own longest stretch of sleep" width="720" height="1472" loading="lazy">
+    <h3 class="big">Your night counts too</h3>
+    <p>Your own longest stretch of sleep, worked out from the log you already keep.</p>
+  </figure>
+  <figure>
+    <img src="img/growth.webp" alt="A growth curve plotted on the WHO tables" width="720" height="1472" loading="lazy">
+    <h3 class="big">Growth as a curve</h3>
+    <p>The exact WHO tables and the trend, not a single number to worry over.</p>
+  </figure>
+</div>
+
+<main>
+  <h2 id="facts">The details</h2>
+  <dl class="facts">
+    <dt>Price</dt><dd>Free. Plus is optional: $9.99 once (US price). No subscription.</dd>
+    <dt>Ads</dt><dd>None</dd>
+    <dt>Account</dt><dd>None. No sign-up, no server.</dd>
+    <dt>Privacy label</dt><dd>Data Not Collected</dd>
+    <dt>Works offline</dt><dd>Yes</dd>
+    <dt>Needs</dt><dd>An iPhone with iOS 17.0 or later.</dd>
+    <dt>Size</dt><dd>8.7 MB</dd>
+    <dt>Languages</dt><dd>English</dd>
+    <dt>Category</dt><dd>Medical</dd>
+    <dt>Age rating</dt><dd>4+</dd>
+    <dt>First released</dt><dd>July 14, 2026</dd>
+    <dt>On the App Store as</dt><dd><a href="https://apps.apple.com/app/id6788453754">BabyKeep: Baby Tracker &amp; Log</a></dd>
+    <dt>Made by</dt><dd>Nick Minieri, one person in the United States</dd>
+  </dl>
+  <p class="soft" style="margin-top:12px">Checked against the App Store listing on November 10, 2026.</p>
 
   <h2 id="support">Support</h2>
-  <div class="card">
-    <p>Need help, found a bug, or have a feature request? I'd love to hear from you.</p>
-    <p>Email: <a href="mailto:minieriapps+babykeep@gmail.com">minieriapps+babykeep@gmail.com</a></p>
-    <p class="muted">I'm a solo developer and read every message. Please allow a couple of days for a reply.</p>
-  </div>
-  <div class="card">
-    <strong>A quick note on health</strong>
-    <p class="muted">BabyKeep is a personal tracker, not a medical device, and does not provide medical advice or diagnosis. Growth percentiles are an approximate general reference based on the WHO Child Growth Standards. Always consult your pediatrician with any questions about your child's health.</p>
-  </div>
+<p>Found a bug, or want something added? Email me at <a href="mailto:minieriapps+babykeep@gmail.com">minieriapps+babykeep@gmail.com</a>. I make BabyKeep on my own and read every message. Give me a couple of days to reply.</p>
+<h3>A quick note on health</h3>
+    <p class="soft">BabyKeep is a personal tracker, not a medical device, and does not provide medical advice or diagnosis. Growth percentiles are an approximate general reference based on the WHO Child Growth Standards. Always consult your pediatrician with any questions about your child's health.</p>
 
   <h2 id="privacy">Privacy Policy</h2>
-  <div class="card">
-    <p class="muted">Last updated: October 1, 2026</p>
-    <p><strong>BabyKeep does not collect, transmit, sell, or share any of your data.</strong> There is no account, no login, and no server.</p>
-    <p><strong>What we collect:</strong> Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
-    <p><strong>Where your data lives:</strong> Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in CSV/PDF export to keep your own copy or share it with your pediatrician.</p>
-    <p><strong>Photos:</strong> Any photo you attach to a milestone or profile stays on your device. Photo-library access is used only so you can pick those images.</p>
-    <p><strong>Notifications:</strong> If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
-    <p><strong>The optional check on you:</strong> If you turn it on, BabyKeep asks two standard questions about your mood every two weeks (the PHQ-2). Your answers are stored only on your iPhone, are left out of backups and exports, are never sent anywhere, and are erased when you turn the check off. BabyKeep is not a medical service and the result is a screen, not a diagnosis.</p>
-    <p><strong>Face ID and the app lock:</strong> BabyKeep does not collect, access, store, or share face data. The optional app lock (in BabyKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells BabyKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; BabyKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in BabyKeep's Settings, or switch off Face ID for BabyKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because BabyKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
-    <p><strong>Children's privacy:</strong> BabyKeep is a tool for parents and caregivers. Because the app collects no data and has no server, no information about you or your child is ever transmitted to anyone.</p>
-  </div>
+<p class="soft">Last updated: October 1, 2026</p>
+    <p>BabyKeep does not collect, transmit, sell, or share any of your data. There is no account, no login, and no server.</p>
+    <h3>What we collect</h3>
+<p>Nothing. The app has no analytics, no ads, no third-party SDKs, and makes no network requests. Because there is no backend, your data physically cannot reach us.</p>
+    <h3>Where your data lives</h3>
+<p>Only on your iPhone, in Apple's on-device database. Delete the app and the data goes with it. Use the built-in CSV/PDF export to keep your own copy or share it with your pediatrician.</p>
+    <h3>Photos</h3>
+<p>Any photo you attach to a milestone or profile stays on your device. Photo-library access is used only so you can pick those images.</p>
+    <h3>Notifications</h3>
+<p>If enabled, reminders are scheduled locally on your device and are not sent through any server.</p>
+    <h3>The optional check on you</h3>
+<p>If you turn it on, BabyKeep asks two standard questions about your mood every two weeks (the PHQ-2). Your answers are stored only on your iPhone, are left out of backups and exports, are never sent anywhere, and are erased when you turn the check off. BabyKeep is not a medical service and the result is a screen, not a diagnosis.</p>
+    <h3>Face ID and the app lock</h3>
+<p>BabyKeep does not collect, access, store, or share face data. The optional app lock (in BabyKeep's Settings, off by default) uses Apple's LocalAuthentication framework: iOS performs the Face ID, Touch ID, or passcode check itself and tells BabyKeep only whether it succeeded. Your face data stays in your device's Secure Enclave under Apple's control; BabyKeep never receives it, so there is nothing for us to use, retain, disclose, or share with any third party. To withdraw permission, turn the lock off in BabyKeep's Settings, or switch off Face ID for BabyKeep in the iOS Settings app (Face ID &amp; Passcode › Other Apps). Because BabyKeep holds no face data there is nothing for it to delete; your enrolled face is managed, and can be removed, only in iOS Settings › Face ID &amp; Passcode.</p>
+    <h3>Children's privacy</h3>
+<p>BabyKeep is a tool for parents and caregivers. Because the app collects no data and has no server, no information about you or your child is ever transmitted to anyone.</p>
 
-  <footer>
-    © 2026 Nick Minieri · BabyKeep
-  </footer>
-</div>
+  <footer>© 2026 Nick Minieri · BabyKeep</footer>
+</main>
 </body>
 </html>
